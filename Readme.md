@@ -1,7 +1,7 @@
 # Личный проект «Пинк»
 
 - Студент: [Иван Окулов](https://up.htmlacademy.ru/adaptive/25/user/1948881).
-- Наставник: `Дмитрий Иовлев`.
+- Наставник: [Дмитрий Иовлев] (https://up.htmlacademy.ru/profession/frontender/13/adaptive/25/user/200490)
 
 ---
 
