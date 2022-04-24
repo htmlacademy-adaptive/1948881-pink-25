@@ -5,7 +5,6 @@
   <title>Pink</title>
 </head>
 <body class="contest-page">
-  <h1 class="vusially-hidden">Конкурс</h1>
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/pink-logo.svg" width="74" height="23" alt="Логотип сайта Pink">
@@ -32,105 +31,101 @@
   </header>
   <main class="main-container">
     <div class="title">
-      <p class="title-text">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <h1 class="title-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="contest-feedback">
       <h2 class="vusially-hidden">Форма для участия в конкурсе</h2>
       <form class="contest-feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+        <p class="contest-feedback__share text-wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
           вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <h3 class="visually-hidden">Данные пользователя</h3>
         <div class="contest-feedback__wrapper contest-feedback__wrapper--info">
           <fieldset class="contest-feedback__field contest-feedback__field--info">
             <ul class="contest-feedback__list">
               <li class="contest-feedback__item">
-                <label class="label label--caption">Фамилия:<input class="text" type="text" name="surname"
-                    placeholder="Укажите фамилию*" required></label>
+                <label class="label label--caption desc-wrapper" for="surname">Фамилия:</label>
+                <input class="text text-wrapper" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--caption">Имя:<input class="text" type="text" name="name"
-                    placeholder="Введите ваше имя*" required></label>
+                <label class="label label--caption desc-wrapper" for="name">Имя:</label>
+                <input class="text text-wrapper" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--caption">Отчество:<input class="text" type="text" name="middle-name"
-                    placeholder="Ну и отчество тоже"></label>
+                <label class="label label--caption desc-wrapper" for="middle-name">Отчество:</label>
+                <input class="text text-wrapper" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
         </div>
         <div class="contest-feedback__wrapper contest-feedback__wrapper--aplication ">
-          <h3 class="visually-hidden">Ваше приложение</h3>
           <fieldset class="contest-feedback__field">
-            <legend class="contest-feedback__title">с каким приложением путешествовали?</legend>
+            <legend class="contest-feedback__title desc-wrapper">с каким приложением путешествовали?</legend>
             <ul class="contest-feedback__list">
               <li class="contest-feedback__item">
-                <label class="label label--radio"><input class="radio" type="radio" name="aplication" value="ios"
-                    checked>Pink для iOS</label>
+                <input class="radio visually-hidden" type="radio" name="aplication" value="ios" id="aplication-ios" checked>
+                <label class="label label--radio text-wrapper" for="aplication-ios">Pink для iOS</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--radio"><input class="radio" type="radio" name="aplication"
-                    value="android">Pink на Android</label>
+                <input class="radio visually-hidden" type="radio" name="aplication" value="android" id="aplication-android">
+                <label class="label label--radio text-wrapper" for="aplication-android">Pink на Android</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--radio"><input class="radio" type="radio" name="aplication"
-                    value="windows">Windows Phone</label>
+                <input class="radio visually-hidden" type="radio" name="aplication" value="windows" id="aplication-windows">
+                <label class="label label--radio text-wrapper" for="aplication-windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <h3 class="visually-hidden">Ваши контакты</h3>
         <div class="contest-feedback__wrapper contest-feedback__wrapper--contacts">
           <fieldset class="contest-feedback__field contest-feedback__field--contacts">
-            <legend class="contest-feedback__title">контактная информация</legend>
+            <legend class="contest-feedback__title desc-wrapper">контактная информация</legend>
             <ul class="contest-feedback__list">
               <li class="contest-feedback__item contest-feedback__item--tell ">
-                <label class="label label--caption">номер телефона:<input class="tell" type="number" name="phone-number"
-                    placeholder="Номер, пожалуйста"></label>
+                <input class="tell text-wrapper" type="number" name="phone-number"  id="phone-number" placeholder="Номер, пожалуйста">
+                <label class="label label--caption" for="phone-number">номер телефона</label>
               </li>
               <li class="contest-feedback__item contest-feedback__item--email">
-                <label class="label label--caption">адрес почты:<input class="email" type="email" name="email"
-                    placeholder="Введите почту*" required></label>
+                <input class="email text-wrapper" type="email" name="email" id="email" placeholder="Введите почту*" required>
+                <label class="label label--caption" for="email">адрес почты</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <h3 class="visually-hidden">Ваши достижения в путешествии</h3>
         <div class="contest-feedback__wrapper contest-feedback__wrapper--progress">
           <fieldset class="contest-feedback__field contest-feedback__field--progress">
-            <legend class="contest-feedback__title">ваши безбашенные достижения в путешествии</legend>
+            <legend class="contest-feedback__title desc-wrapper">ваши безбашенные достижения в путешествии</legend>
             <ul class="contest-feedback__list">
               <li class="contest-feedback__item">
-                <label class="label label--checkbox"><input class="checkbox" type="checkbox" name="selfi" checked>
-                  Сделал селфи с акулой</label>
+                <input class="checkbox" type="checkbox" name="selfi" id="selfi" checked>
+                <label class="label label--checkbox text-wrapper" for="selfi">Сделал селфи с акулой</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--checkbox"><input class="checkbox" type="checkbox" name="beach" checked>
-                  Обгорел на пляже</label>
+                <input class="checkbox" type="checkbox" name="beach" checked id="beach">
+                <label class="label label--checkbox text-wrapper"  for="beach">Обгорел на пляже</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--checkbox"><input class="checkbox" type="checkbox" name="norris"> Видел Чака
-                  Норриса</label>
+                <input class="checkbox" type="checkbox" name="norris" id="norris">
+                <label class="label label--checkbox text-wrapper" for="norris"> Видел Чака Норриса</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--checkbox"><input class="checkbox" type="checkbox" name="souvenirs"> Накупил
-                  сувениров</label>
+                <input class="checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                <label class="label label--checkbox text-wrapper" for="souvenirs"> Накупил сувениров</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--checkbox"><input class="checkbox" type="checkbox" name="tower" checked>
-                  Удержал башню</label>
+                <input class="checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label class="label label--checkbox text-wrapper" for="tower">Удержал башню</label>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--checkbox"><input class="checkbox" type="checkbox" name="hotel"> Разгромил
-                  отель</label>
+                <input class="checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="label label--checkbox text-wrapper" for="hotel"> Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <h3 class="visually-hidden">Ваши эмоции</h3>
         <div class="contest-feedback__wrapper contest-feedback__wrapper--emotions">
           <fieldset class="contest-feedback__field contest-feedback__field--emotions">
-            <legend class="contest-feedback__title">опишите ваши эмоции</legend>
-            <textarea class=" textarea textarea--text" name="feedback-emotions"
+            <legend class="contest-feedback__title desc-wrapper">опишите ваши эмоции</legend>
+            <textarea class="textarea textarea--text text-wrapper" name="feedback-emotions"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
@@ -215,13 +210,13 @@
   </footer>
   <div class="modal modal--error">
     <h4 class="modal__title modal__title--error">Что-то пошло не так!</h4>
-    <p class="modal__content modal__content--error ">Проверьте поля, выделенные красным,скорее всего вы забыли их
+    <p class="modal__content modal__content--error text-wrapper">Проверьте поля, выделенные красным,скорее всего вы забыли их
       заполнить</p>
     <button class="modal__button modal__button--ok" type="button">ок</button>
   </div>
   <div class="modal modal--acceptance">
     <h4 class="modal__title modal__title--acceptance">Ваша заявка отправлена</h4>
-    <p class="modal__content modal__content--acceptance ">Спасибо за ваше участие, ваша заявка уже поступила к нам. В
+    <p class="modal__content modal__content--acceptance text-wrapper">Спасибо за ваше участие, ваша заявка уже поступила к нам. В
       ближайшее время мы рассмотрим ее и оповестим вас.</p>
     <div class="modal__button-wrapper">
       <button class="modal__button modal__button--acceptance" type="button">закрыть окно</button>
