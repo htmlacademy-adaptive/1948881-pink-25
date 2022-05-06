@@ -2,9 +2,11 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Pink</title>
 </head>
 <body class="contest-page">
+  <div class="main-header-intro">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/pink-logo.svg" width="74" height="23" alt="Логотип сайта Pink">
@@ -14,16 +16,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item ">
-            <a href="index.html">главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item ">
-            <a href="photo.html">фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a href="contest.html">конкурс</a>
+            <a href="contest.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">html academy</a>
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -33,6 +35,7 @@
     <div class="title">
       <h1 class="title-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
+  </div>
     <section class="contest-feedback">
       <h2 class="vusially-hidden">Форма для участия в конкурсе</h2>
       <form class="contest-feedback__form" action="https://echo.htmlacademy.ru" method="post">
@@ -43,15 +46,15 @@
           <fieldset class="contest-feedback__field contest-feedback__field--info">
             <ul class="contest-feedback__list">
               <li class="contest-feedback__item">
-                <label class="label label--caption desc-wrapper" for="surname">Фамилия:</label>
+                <label class="label label--caption desc-wrapper" for="surname">фамилия:</label>
                 <input class="text text-wrapper" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--caption desc-wrapper" for="name">Имя:</label>
+                <label class="label label--caption desc-wrapper" for="name">имя:</label>
                 <input class="text text-wrapper" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
               </li>
               <li class="contest-feedback__item">
-                <label class="label label--caption desc-wrapper" for="middle-name">Отчество:</label>
+                <label class="label label--caption desc-wrapper" for="middle-name">отчество:</label>
                 <input class="text text-wrapper" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
               </li>
             </ul>
@@ -81,12 +84,12 @@
             <legend class="contest-feedback__title desc-wrapper">контактная информация</legend>
             <ul class="contest-feedback__list">
               <li class="contest-feedback__item contest-feedback__item--tell ">
-                <input class="tell text-wrapper" type="number" name="phone-number"  id="phone-number" placeholder="Номер, пожалуйста">
-                <label class="label label--caption" for="phone-number">номер телефона</label>
+                <input class="tell" type="number" name="phone-number"  id="phone-number" placeholder="Номер, пожалуйста">
+                <label class="label label--caption desc-wrapper" for="phone-number">номер телефона</label>
               </li>
               <li class="contest-feedback__item contest-feedback__item--email">
-                <input class="email text-wrapper" type="email" name="email" id="email" placeholder="Введите почту*" required>
-                <label class="label label--caption" for="email">адрес почты</label>
+                <input class="email" type="email" name="email" id="email" placeholder="Введите почту*" required>
+                <label class="label label--caption desc-wrapper" for="email">адрес почты</label>
               </li>
             </ul>
           </fieldset>
@@ -131,8 +134,8 @@
         </div>
         <div class="contest-feedback__wrapper">
           <input class="contest-feedback__submit" type="submit" value="отправить форму">
-          <p class="contest-feedback__require">
-            <span class="contest-feedback__require-element">*</span> — обязательные поля
+          <p class="contest-feedback__require text-wrapper">
+            <span class="contest-feedback__require-element desc-wrapper">*</span> — обязательные поля
           </p>
         </div>
       </form>

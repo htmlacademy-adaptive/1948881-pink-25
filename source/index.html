@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Pink</title>
 </head>
 <body class="page__body">
   <h1 class="vusially-hidden">Pink</h1>
+  <div class="main-header-intro">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/pink-logo.svg" width="74" height="23" alt="Логотип сайта Pink">
@@ -16,16 +18,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="contest.html">конкурс</a>
+            <a href="contest.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">html academy</a>
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -54,6 +56,7 @@
         <p class="source-download__explanation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
+  </div>
     <section class="about">
       <h2 class="visually-hidden">О нас!</h2>
       <div class="about__wrapper">
@@ -61,25 +64,28 @@
         <p class="about__slogan about__slogan--sentence">Нам есть, что вам предложить!</p>
       </div>
       <div class="about-item">
+        <div class="about-item__img-wrapper-mood"></div>
         <h3 class="about__title">Поднимает настроение</h3>
         <p class="about__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
           кликов!</p>
       </div>
       <div class="about-item">
+        <div class="about-item__img-wrapper-world"></div>
         <h3 class="about__title">Меняет мир вокруг</h3>
           <p class="about__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
             эффект
           </p>
       </div>
       <div class="about-item">
+        <div class="about-item__img-wrapper-friends"></div>
         <h3 class="about__title">Заводит новых друзей</h3>
         <p class="about__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
     </section>
     <section class="efficiency">
       <div class="efficiency__wrapper">
+        <div class="efficiency__time"></div>
         <h2 class="efficiency__title">Эффект на 24 часа!</h2>
-        <img class="efficiency__time" src="#" alt="Изображение секундомера">
         <p class="efficiency__description">Британские ученые провели исследования и доказали,что положительный эффект от
           использования приложения длится целые сутки!</p>
         <a class="efficiency__research" href="#">Узнать больше об исследовании</a>
@@ -92,6 +98,7 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-year">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
@@ -99,12 +106,14 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Илья Соколов</cite>
+              <p class="reviews__author-year">20 лет, студент</p>
               <p class="reviews__text">«Бывали и лучше!»</p>
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Дмитрий Власов</cite>
+              <p class="reviews__author-year">30 лет, военный</p>
               <p class="reviews__text">«Очень удобное приложение!»</p>
             </div>
           </blockquote>
