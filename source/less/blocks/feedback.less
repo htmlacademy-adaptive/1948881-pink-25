@@ -25,3 +25,64 @@
 .feedback__map {
   background-image: url("../img/map.png");
 }
+
+.feedback__wrapper {
+  display: grid;
+  height: 614px;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .feedback__wrapper {
+    height: 779px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .feedback__title {
+    grid-column: 1/3;
+  }
+
+  .feedback__phone {
+    grid-column: 1/2;
+  }
+
+  .feedback__contact {
+    grid-column: 2/3;
+  }
+
+  .feedback__address {
+    grid-column: 1/3;
+  }
+
+  .feedback__map {
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__wrapper {
+    height: 793px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .feedback__title {
+    grid-column: 1/4;
+  }
+
+  .feedback__phone {
+    grid-column: 1/2;
+  }
+
+  .feedback__contact {
+    grid-column: 2/3;
+  }
+
+  .feedback__address {
+    grid-column: 3/4;
+  }
+
+  .feedback__map {
+    grid-column: 1/4;
+  }
+}

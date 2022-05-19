@@ -2,11 +2,21 @@
   background-color: rgba(0, 0, 0, 0.5);
   font-style: normal;
   font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
+  line-height: 32px;
+  font-weight: 700;
   margin: 0 auto;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   a {
     color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    height: 110px;
   }
 }

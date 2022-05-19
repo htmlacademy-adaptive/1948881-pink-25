@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  min-height: 364px;
 }
 
 .reviews__author-name {
@@ -10,4 +11,21 @@
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
+}
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: @mobile-width-only) {
+  .reviews__author-year {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__text {
+    order: -1;
+  }
 }

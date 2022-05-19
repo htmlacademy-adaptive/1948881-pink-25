@@ -15,20 +15,78 @@
   font-weight: 400;
 }
 
-.about-item__img-wrapper-mood {
-  background-image: url("../img/phone-moon.png");
-  width: 186px;
-  height: 382px;
+.about-item--mood,
+.about-item--world,
+.about-item--friends {
+  display: flex;
+  flex-direction: column;
 }
 
-.about-item__img-wrapper-world {
-  background-image: url("../img/phone-world.png");
-  width: 186px;
-  height: 382px;
-}
-
-.about-item__img-wrapper-friends {
+.about-item--friends::after {
+  content: "";
   background-image: url("../img/phone-friends.png");
   width: 186px;
   height: 382px;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .about-item--friends::after {
+    display: none;
+  }
+
+  .about__wrapper {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .about-item--mood {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .about-item--world {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .about-item--friends {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__wrapper {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .about-item--mood {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .about-item--world {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .about-item--friends {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .about-item--world::after {
+    content: "";
+    background-image: url("../img/phone-world.png");
+    width: 186px;
+    height: 382px;
+  }
+
+  .about-item--mood::after {
+    content: "";
+    background-image: url("../img/phone-moon.png");
+    width: 186px;
+    height: 382px;
+  }
 }
