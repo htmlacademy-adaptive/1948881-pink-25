@@ -28,3 +28,32 @@
   line-height: 24px;
   font-weight: 400;
 }
+
+@media (max-width: @mobile-width-only) {
+  .efficiency {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .efficiency {
+    min-height: 330px;
+  }
+
+  .efficiency__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .efficiency__time {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .efficiency {
+    min-height: 429px;
+  }
+}
